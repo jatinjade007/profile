@@ -1,0 +1,18 @@
+<img *ngIf=user [src]="user.avatarUrl" width="100" height="100">
+<h2>My details</h2>
+
+<h3>Full Name</h3>
+<p *ngIf=user >{{ user.firstName }} {{ user.lastName }}</p>
+<br>
+
+<h3>Email</h3>
+<p *ngIf=user >{{ user.email }}</p>
+<br>
+
+<h3>Mobile</h3>
+<p *ngIf=user >{{ user.phone }}</p>
+<br>
+
+<h3>Address</h3>
+<p *ngIf=user >Dr.no: #{{ user.address.building }}, {{ user.address.street }}, {{ user.address.city }}, {{ user.address.state }} - PIN:{{ user.address.zipCode }}</p>
+<br>
